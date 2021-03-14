@@ -44,7 +44,6 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -76,8 +75,13 @@ WSGI_APPLICATION = 'installer.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'test',
+        'CLIENT': {
+            'host': 'mongodb://Admur04:Admur04012000@admur-shard-00-00.vjdia.mongodb.net:27017,admur-shard-00-01.vjdia.mongodb.net:27017,admur-shard-00-02.vjdia.mongodb.net:27017/test?ssl=true&replicaSet=atlas-cmxj7p-shard-0&authSource=admin&retryWrites=true&w=majority',
+            'username': 'Admur04',
+            'password': 'Admur04012000'
+        }
     }
 }
 
