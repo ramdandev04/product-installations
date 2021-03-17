@@ -25,7 +25,7 @@ SECRET_KEY = 'xtl2_wv$^e(ku_4a-%d#=(it8u5w3@9x9be%)s)u)_2jlmdwlx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['209.151.149.103']
+ALLOWED_HOSTS = ['###<----->###']
 
 
 # Application definition
